@@ -7,6 +7,18 @@ function paramount () {
     });
 
 }
+// static/assets/img/JPEG image.jpeg
+
+function gim () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://www.gimkit.com/');
+    });
+
+}
+
 
 function shittletv () {
 
@@ -928,4 +940,5 @@ function setImageBackground () {
         localStorage.setItem("backgroundImage", url);
         window.location.reload();
     }
+
 
