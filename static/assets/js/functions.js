@@ -37,7 +37,15 @@ function pokemoncom () {
     });
 
 }
+function chatgpt () {
 
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://chatgpt.com');
+    });
+
+}
 function widget () {
 
     window.navigator.serviceWorker.register('/sw.js', {
@@ -920,3 +928,4 @@ function setImageBackground () {
         localStorage.setItem("backgroundImage", url);
         window.location.reload();
     }
+
