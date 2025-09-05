@@ -20,6 +20,16 @@ function gim () {
 }
 
 
+function awake () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://awakening.legendsoflearning.com/play');
+    });
+
+}
+
 function shittletv () {
 
     window.navigator.serviceWorker.register('/sw.js', {
@@ -940,5 +950,6 @@ function setImageBackground () {
         localStorage.setItem("backgroundImage", url);
         window.location.reload();
     }
+
 
 
