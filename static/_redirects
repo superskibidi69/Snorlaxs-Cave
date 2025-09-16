@@ -8,11 +8,11 @@
 /           /index.html   200
 
 # Main sections
-/games      /Games.html   200
-/apps       /Apps.html    200
-/about      /About.html   200
-/settings   /Settings.html 200
-/proxy      /Proxy.html   200
+ /Games      /Games.html   200
+ /Apps       /Apps.html    200
+ /About      /About.html   200
+ /Settings   /Settings.html 200
+ /Proxy      /Proxy.html   200
 
 # People secrets
 /bigfoot    /people-secrets/bigfoot.html 200
